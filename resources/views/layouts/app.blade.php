@@ -1,39 +1,41 @@
-@php
-$mainClasses = "";
-if (request()->routeIs('login')
-    || request()->routeIs('register')
-    || request()->routeIs('password.request')
-    || request()->routeIs('password.reset')
-    || request()->routeIs('verification.notice')
-    || request()->routeIs('verification.verify')
-    || request()->routeIs('password.confirm')
-    ) {
-    $mainClasses .= 'form-signin';
-}
-@endphp
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Scire Panel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    </head>
-    <body class="py-5">
-        <div class="container">
-            @include('layouts.header')
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-            <!-- Page Content -->
-            <main {{ $attributes->merge(['class' => $mainClasses]) }}>
-                {{ $slot }}
-            </main>
-        </div>
-    </body>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87b17afbf0.js" crossorigin="anonymous"></script>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <livewire:scripts />
+</head>
+
+<body>
+    <div id="app">
+        
+        @include('layouts.header')
+        <main class="py-4">
+            @yield('content')
+        </main>
+
+       
+    </div>
+</body>
+
 </html>
