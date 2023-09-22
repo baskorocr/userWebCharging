@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,11 +13,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [\App\Http\Controllers\index::class, 'index'])->name('index');
-
-
-
 Auth::routes();
 
+Route::get('/', function () {
+    if (request()->attributes->get('is_mobile')) {
+        return redirect()->route('login');
+    } else {
+        return redirect()->route('index');
+    }
+});
 
+Route::get('/index', [\App\Http\Controllers\index::class, 'index'])->name('index');
