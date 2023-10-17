@@ -34,7 +34,7 @@
 									</p>
 								</div>
 			      	</div>
-							<form method="p" action="{{ route('login') }}" class="signin-form">
+							<form method="POST" action="{{ route('cek') }}" class="signin-form">
 								@csrf
 								<div class="form-group mt-3">
 										<input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

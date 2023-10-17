@@ -548,38 +548,16 @@
           <div class="row">
             <div class="col-12 py-8 text-white">
               <div class="d-flex flex-column flex-center">
-                <h2 class="text-white fs-2 fs-md-3">WE WILL SEE YOU</h2>
-                <h1 class="text-white fs-2 fs-sm-4 fs-lg-7 fw-bold">Enjoy 30% Off On First Trip</h1>
+                <h2 class="text-white fs-2 fs-md-3">Join Us</h2>
+                <h1 class="text-white fs-2 fs-sm-4 fs-lg-7 fw-bold">Enjoy the convenience of our system</h1>
+              <h2 class="text-white fs-2 fs-md-3">Start Contacting Us Now</h2>
               </div>
-              <form class="row gy-2 gx-md-2 gx-lg-4 flex-center my-6">
-                <div class="col-6 col-md-3">
-                  <label class="visually-hidden" for="inlineFormSelectPref">Destinations</label>
-                  <select class="form-select" id="inlineFormSelectPref">
-                    <option selected="">Destinations</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-6 col-md-3">
-                  <label class="visually-hidden" for="autoSizingSelect">Package</label>
-                  <select class="form-select" id="autoSizingSelect">
-                    <option selected="">Package</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-6 col-md-3">
-                  <label class="visually-hidden" for="date">Date</label>
-                  <div class="input-group">
-                    <input class="form-control" id="date" type="date" />
-                  </div>
-                </div>
+
+              <div class="row gy-2 gx-md-2 gx-lg-4 flex-center my-6">
                 <div class="col-6 col-md-auto">
-                  <button class="btn btn-lg btn-primary" type="submit">Book Now</button>
+                  <a href="https://wa.me/6289654825055" class="btn btn-lg btn-primary" type="submit">Our Contact</a>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -606,10 +584,10 @@
           </div>
           <div class="row flex-center">
             <div class="col-auto mb-4">
-              <p class="mb-0 fs--1 text-dark">&copy; This template is made with&nbsp;
+              <p class="mb-0 fs--1 text-dark">&copy; Develop with&nbsp;
                 <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3984F3" viewBox="0 0 16 16">
                   <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                </svg>&nbsp;by&nbsp;<a class="text-700" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
+                </svg>&nbsp;by&nbsp;<a class="text-700" href="https://dharmagroup.co.id/beranda" target="_blank">Dharma Group </a>
               </p>
             </div>
           </div>
