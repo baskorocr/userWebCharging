@@ -549,13 +549,17 @@
             <div class="col-12 py-8 text-white">
               <div class="d-flex flex-column flex-center">
                 <h2 class="text-white fs-2 fs-md-3">Join Us</h2>
-                <h1 class="text-white fs-2 fs-sm-4 fs-lg-7 fw-bold">Enjoy the convenience of our system</h1>
-              <h2 class="text-white fs-2 fs-md-3">Start Contacting Us Now</h2>
+                <h2 class="text-white fs-2 fs-md-3 fw-bold">Enjoy the convenience of our system</h2>
+              <h2 class="text-white fs-2 fs-md-3">Start Seller Now</h2>
+              <div class="row">
+                <div class="col"><a href="https://wa.me/6289654825055" class="btn btn-lg btn-primary mt-5" type="submit">Contact</a></div>
+                <div class="col"><a href="{{ route('registSeller') }}" class="btn btn-lg btn-primary mt-5" type="submit">Register</a></div>
+              </div>
               </div>
 
               <div class="row gy-2 gx-md-2 gx-lg-4 flex-center my-6">
                 <div class="col-6 col-md-auto">
-                  <a href="https://wa.me/6289654825055" class="btn btn-lg btn-primary" type="submit">Our Contact</a>
+                  
                 </div>
               </div>
             </div>

@@ -19,6 +19,7 @@ class dashboardUser extends Controller
 
     public function index()
     {
+
         $token = Session::get('token');
         $myController = new getUser();
         $data = $myController->getUser();
@@ -39,10 +40,12 @@ class dashboardUser extends Controller
                 'IdUser' => $data['id']
             ];
 
+
             $response = $client->post('http://127.0.0.1:8000/api/total', [
                 'json' => $data,
                 'headers' => $headers,
             ]);
+
 
             $data = json_decode($response->getBody()->getContents(), true);
 
@@ -53,7 +56,7 @@ class dashboardUser extends Controller
 
 
         } catch (\Exception $e) {
-
+            dd($e);
 
         }
 
@@ -79,7 +82,6 @@ class dashboardUser extends Controller
                 'IdUser' => $data['id']
             ];
 
-
             $response = $client->post('http://127.0.0.1:8000/api/history', [
                 'json' => $data,
                 'headers' => $headers,
@@ -92,12 +94,13 @@ class dashboardUser extends Controller
             $history = $data['data'];
 
 
+
             return view('user.history', ['history' => $history]);
 
 
         } catch (\Exception $e) {
 
-
+            dd($e);
         }
 
     }

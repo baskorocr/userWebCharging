@@ -12,7 +12,7 @@
                     <div class="d-flex align-items-end row">
                       <div class="col-sm-7">
                         <div class="card-body">
-                          <h5 class="card-title text-primary heading">Welcome {{dd($seller)}}🎉</h5>
+                          <h5 class="card-title text-primary heading">Welcome {{$seller[0]['name']}}🎉</h5>
                           <p class="mb-4">
                             Enjoy the convenience of charging your electric vehicle with us.
                           </p>

@@ -36,7 +36,9 @@ class AuthJwt
                 $role = json_decode($response->getBody()->getContents());
 
                 if ($role->role == "0") {
+
                     return redirect(url('user/dashboard'));
+
                 } else if ($role->role == "1") {
 
                     return redirect(url('seller/dashboard'));

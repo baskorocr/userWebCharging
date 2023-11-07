@@ -26,7 +26,7 @@ class registerSeller extends Controller
             'email' => $request->email,
             'password' => $request->password,
             'noTelp' => $request->noTelp,
-            'role' => $request->role,
+            'role' => 1,
             'password_confirmation' => $request->passwordConfirmation,
         ];
 
